@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shajan M | Cyber Security Consultant | VAPT</title>
+<meta name="description" content="Shajan M, Cyber Security Consultant with 2 years of experience in VAPT across web applications, APIs, Android apps, and network infrastructure.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5F8; --panel:#FFFFFF; --ink:#14202B; --muted:#55636F; --line:#D5DDE5;
+  --accent:#0F5C7A; --sev:#B3261E; --sev-bg:#FBE9E7; --ok:#1B6B3A; --ok-bg:#E3F3EA;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#10171D; --panel:#18222B; --ink:#E6EDF3; --muted:#9AA8B4; --line:#2A3743;
+    --accent:#5FB4D6; --sev:#FF8A80; --sev-bg:#3A1F1D; --ok:#6FCF97; --ok-bg:#183425;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10171D; --panel:#18222B; --ink:#E6EDF3; --muted:#9AA8B4; --line:#2A3743;
+  --accent:#5FB4D6; --sev:#FF8A80; --sev-bg:#3A1F1D; --ok:#6FCF97; --ok-bg:#183425;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0}
+
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;flex-wrap:wrap}
+nav .links{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+nav a{color:var(--ink);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--accent)}
+.theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:4px 12px;font:inherit;font-size:14px;cursor:pointer}
+
+.hero{padding:40px 0 56px}
+.hero h1{font-size:clamp(40px,8vw,72px);font-weight:700;letter-spacing:-.02em;max-width:14ch}
+.lede{font-size:20px;color:var(--muted);max-width:58ch;margin:20px 0 32px}
+.record{background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--sev);border-radius:6px;overflow:hidden}
+.record-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);font-weight:500}
+.chip{background:var(--ok-bg);color:var(--ok);border-radius:999px;padding:2px 12px;font-size:14px;font-weight:500}
+.record dl{margin:0;display:grid;grid-template-columns:150px 1fr}
+.record dt,.record dd{padding:12px 20px;border-bottom:1px solid var(--line);margin:0}
+.record dt{color:var(--muted)}
+.record dt:nth-last-of-type(1),.record dd:last-of-type{border-bottom:0}
+@media (max-width:560px){.record dl{grid-template-columns:1fr}.record dt{padding-bottom:0;border-bottom:0}}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:10px 20px;border-radius:6px;font-weight:500;text-decoration:none;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn.ghost{color:var(--accent)}
+
+section{padding:48px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:32px;margin-bottom:8px}
+.sub{color:var(--muted);margin:0 0 28px;max-width:60ch}
+
+ol.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--line);border-radius:6px;background:var(--panel);overflow:hidden}
+ol.steps li{counter-increment:s;padding:18px;border-right:1px solid var(--line)}
+ol.steps li:last-child{border-right:0}
+ol.steps li::before{content:counter(s);display:inline-block;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--bg);text-align:center;font-weight:500;font-size:14px;line-height:26px;margin-bottom:10px}
+ol.steps b{display:block;font-family:var(--head);font-size:18px}
+ol.steps span{color:var(--muted);font-size:15px}
+
+.job h3{font-size:24px}
+.job .when{color:var(--muted);font-size:15px;margin:2px 0 14px}
+.job ul{margin:0;padding-left:20px}
+.job li{margin-bottom:8px}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
+.skills h3{font-size:19px;margin-bottom:8px}
+.skills p{margin:0;color:var(--muted);font-size:16px}
+
+.proj{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.proj li{padding:22px 0;border-bottom:1px solid var(--line)}
+.proj h3{font-size:22px}
+.proj p{margin:6px 0 0;color:var(--muted);max-width:68ch}
+
+.certs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.certs li{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px 18px}
+.certs b{display:block;font-family:var(--head);font-size:18px;line-height:1.25}
+.certs span{color:var(--muted);font-size:15px}
+
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line)}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);font-size:16px}
+th{color:var(--muted);font-weight:500}
+.scroll{overflow-x:auto}
+
+.contact{display:flex;flex-wrap:wrap;gap:12px 24px;font-weight:500;margin:0 0 24px}
+footer{padding:32px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <strong style="font-family:var(--head);font-size:20px">Shajan M</strong>
+    <div class="links">
+      <a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+      <button class="theme" id="theme" type="button" aria-label="Toggle dark mode">Theme</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>I find the weak spots before attackers do.</h1>
+    <p class="lede">I'm Shajan, a Cyber Security Consultant with 2 years of experience in vulnerability assessment and penetration testing across web applications, APIs, Android apps, and network infrastructure. I validate every finding and report it with a fix your team can act on.</p>
+
+    <div class="record" role="group" aria-label="Profile summary">
+      <div class="record-head"><span>Cyber Security Consultant, VAPT</span><span class="chip">Open to work</span></div>
+      <dl>
+        <dt>Experience</dt><dd>2 years, GRM Technologies (09/2024 to present)</dd>
+        <dt>Coverage</dt><dd>Web, API, Android, network, wireless, firewall and source code reviews</dd>
+        <dt>Tooling</dt><dd>Burp Suite, Nmap, Nessus, Metasploit, Wireshark, OWASP ZAP</dd>
+        <dt>Credentials</dt><dd>CEH, Certified AppSec Practitioner v2, Google Cybersecurity</dd>
+        <dt>Location</dt><dd>Chennai, Tamil Nadu</dd>
+      </dl>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="Shajan_M_Resume.pdf" download>Download resume</a>
+      <a class="btn ghost" href="Shajan_M_Resume.pdf" target="_blank" rel="noopener">View resume</a>
+      <a class="btn ghost" href="#contact">Contact me</a>
+    </div>
+  </header>
+</div>
+
+<section id="method"><div class="wrap">
+  <h2>How I work</h2>
+  <p class="sub">The same path on every engagement, so results can be reproduced and trusted.</p>
+  <ol class="steps">
+    <li><b>Test</b><span>Manual and tool-assisted assessment of the agreed scope.</span></li>
+    <li><b>Validate</b><span>Confirm each issue is real and remove false positives.</span></li>
+    <li><b>Rate</b><span>Risk rating, CVSS score, and business impact.</span></li>
+    <li><b>Report</b><span>Clear findings with remediation guidance.</span></li>
+    <li><b>Retest</b><span>Verify that fixes actually work.</span></li>
+  </ol>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <p class="sub">Currently working with clients both on-site and remotely.</p>
+  <div class="job">
+    <h3>Cyber Security Consultant, GRM Technologies</h3>
+    <p class="when">09/2024 to present · Chennai, India</p>
+    <ul>
+      <li>Perform VAPT across web applications, Android applications, APIs, network infrastructure, and wireless networks.</li>
+      <li>Review source code for logic flaws and insecure coding practices, and review firewall configurations for misconfigurations.</li>
+      <li>Identify, validate, and document vulnerabilities with risk ratings, CVSS scoring, and business impact analysis.</li>
+      <li>Write detailed assessment reports with actionable remediation and mitigation steps.</li>
+      <li>Manage several security assessment projects at once and help clients align with industry standards and best practices.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <p class="sub">What I test, and the tools I use to do it.</p>
+  <div class="skills">
+    <div><h3>Security testing</h3><p>VAPT, web application security, API security, Android application security, infrastructure and wireless assessment, source code review, firewall configuration review.</p></div>
+    <div><h3>Tools</h3><p>Burp Suite, Nmap, Nessus, Metasploit, Wireshark, OWASP ZAP, Nikto, Snyk, Docker, Android Studio, Kali Linux.</p></div>
+    <div><h3>Standards</h3><p>OWASP Top 10, CVSS scoring, and secure release and compliance practices.</p></div>
+    <div><h3>Languages</h3><p>Tamil (native), English (fluent).</p></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <p class="sub">Hands-on labs I built to practice and test security concepts.</p>
+  <ul class="proj">
+    <li><h3>Virtualized Red Team Lab</h3><p>Built a lab with a Windows client, an Active Directory domain controller, a Linux attacker machine, and a Linux bastion host to simulate an enterprise network and practice penetration testing, Active Directory attacks, and post-exploitation.</p></li>
+    <li><h3>AWS Cloud Infrastructure Lab</h3><p>Built a custom VPC with public and private subnets, an Internet Gateway, a NAT Gateway, and several EC2 instances, then handled secure administration and network configuration over SSH.</p></li>
+    <li><h3>CI/CD Security Lab</h3><p>Built and secured pipelines with Git and GitHub Actions, covering pipeline security, secret management, dependency scanning, and secure software delivery.</p></li>
+  </ul>
+</div></section>
+
+<section id="certifications"><div class="wrap">
+  <h2>Certifications and education</h2>
+  <p class="sub">&nbsp;</p>
+  <ul class="certs">
+    <li><b>Certified Ethical Hacker (CEH)</b><span>EC-Council</span></li>
+    <li><b>Certified AppSec Practitioner v2</b><span>The SecOps Group</span></li>
+    <li><b>Google Cybersecurity Certification</b><span>Coursera, 200 hours</span></li>
+    <li><b>Certified Cybersecurity Educator Professional (CCEP)</b><span>Red Team Leaders</span></li>
+  </ul>
+  <div class="scroll" style="margin-top:28px"><table>
+    <thead><tr><th>Qualification</th><th>Institution</th><th>Years</th><th>Score</th></tr></thead>
+    <tbody>
+      <tr><td>B.E Cyber Security</td><td>Paavai Engineering College, Namakkal</td><td>2020 to 2024</td><td>84.9%</td></tr>
+      <tr><td>HSC</td><td>S.M.R.V Higher Secondary School, Nagercoil</td><td>2019 to 2020</td><td>75.5%</td></tr>
+      <tr><td>SSLC</td><td>S.M.R.V Higher Secondary School, Nagercoil</td><td>2017 to 2018</td><td>88.2%</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="sub">Open to cybersecurity and VAPT roles. Email is the quickest way to reach me.</p>
+  <p class="contact">
+    <a href="mailto:shajanmurugan2002@gmail.com">shajanmurugan2002@gmail.com</a>
+    <a href="https://www.linkedin.com/in/shajan-m-84787a21b" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/Shajan-2002" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://tryhackme.com/p/shajan" target="_blank" rel="noopener">TryHackMe</a>
+  </p>
+  <a class="btn primary" href="Shajan_M_Resume.pdf" download>Download resume (PDF)</a>
+</div></section>
+
+<footer><div class="wrap">Shajan M · Chennai, Tamil Nadu</div></footer>
+
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('theme');
+  try{var s=localStorage.getItem('theme');if(s)root.setAttribute('data-theme',s);}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
